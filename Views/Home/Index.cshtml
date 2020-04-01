@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Products ElasticSearch</h1>
+</div>
+<p>
+    In this page you are able to:
+    <ul>
+        <li>import N products by typing a number (please not too big!) in input text below and clicking <i>Import Products</i> button</li>
+        <li>search for inserted products with ElasticSearch by typing into search bar (almost 2 characters)</li>
+    </ul>
+</p>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label for="txt-product-count">Product count:</label>
+            <input id="txt-product-count" class="form-control form-control-sm" type="number" />
+            <p class="text-danger txt-product-count-error">Inserire un numero valido</p>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-primary btn-sm btn-product-import">Import Products</button>
+        </div>
+    </div>
+</div>
+<h1 class="display-4">Dashboard</h1>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Min Price:</small>
+            <div class="min-price-txt font-weight-bold"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Average Price:</small>
+            <div class="avg-price-txt font-weight-bold"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Max Price:</small>
+            <div class="max-price-txt font-weight-bold"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Categories found:</small>
+            <div class="categories-products-list"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Brands found:</small>
+            <div class="brands-products-list"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <small>Stores found:</small>
+            <div class="stores-products-list"></div>
+        </div>
+    </div>
+</div>
+
+
